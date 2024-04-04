@@ -130,15 +130,55 @@ end
 
 
 
+def introduce
+    puts "こんにちは"
+    puts "私はにんじゃわんこです"
+end
+
+introduce
 
 
+def introduce(name)
+    puts "こんにちは"
+    puts "私は#{name}です"
 
 
+end
+
+introduce("Yusuke")
+introduce("Nanaho")
+
+def print_info(item)
+    puts "わんこでんきへようこそ！"
+    puts "今日は#{item}がセール中です！"
+end
+
+print_info("ヘッドホン")
+print_info("テレビ")
 
 
+def #メソッド名
+    return #値
+end
+
+def add(a, b)
+    return a + b
+end
+
+sum = add(1,2)
+puts sum
+
+def negative?(number)
+    return number < 0
+end
+
+puts negative?(5)
 
 
+def introduce(name:, age:, food:)
+    puts "私は#{name}です"
+    puts "年齢は#{age}歳です"
+    puts "好きな食べ物は#{food}です"
+end
 
-
-
-
+introduce(name:"Yusuke", age:38, food:"Nanaho")
