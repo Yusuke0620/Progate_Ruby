@@ -65,7 +65,80 @@ if score <= 95 && score >= 99
 end
 
 
-number = 48
+languages = ["日本語", "英語", "スペイン語"]
+puts languages
+
+puts languages[1]
+puts "#{languages[0]}を話せます"
+
+languages.each do |languag|
+    puts "#{languag}を話せます"
+end
+
+
+
+
+languages.each do |language|
+    puts "#{language}を話せます"
+end
+
+exam = {
+    subject => math,
+    score => 80
+}
+
+puts exam
+
+exam = {:subject => "Math", :score => 80}
+puts :score
+
+
+exam = {subject: "Math", score: 80}
+
+puts exam[:grade]
+
+
+
+exams = [
+    {subject: "Math", score: 80},
+    {subject: "Science", score: 55}
+]
+
+puts exam[1]
+
+
+
+users ~ [
+    {name: "Suzuki", age: 21},
+    {name: "Kato", age: 14},
+]
+
+puts users[1][:name0]
+user = users[1]
+puts user[:name]
+
+
+exams = [
+  {subject: "Math", score: 80},
+  {subject: "Science", score: 55}
+]
+
+exams.each do |exam|
+    puts "#{:subject}の結果は#{[:score]}点です"
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
